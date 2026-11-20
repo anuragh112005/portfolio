@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Developer Portfolio of Anurag Chaurasia, a 2nd Year B.Tech Computer Science and Engineering student at DSEU GB Pant Engineering College. Exploring code, technology, and web development.">
+  <meta name="theme-color" content="#050505">
+  <title>Anurag Chaurasia | Developer Portfolio</title>
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans (with fallback to robust system fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Accessibility: Skip to main content -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Reading / Scroll Progress Bar -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- =========================================================================
+       SECTION 1: NAVIGATION BAR
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <!-- Personal Brand / Name -->
+      <a href="#hero" class="nav-brand" aria-label="Home">
+        <span class="brand-code-bracket">&lt;</span>
+        <span class="brand-name" id="nav-brand-name">ANURAG</span>
+        <span class="brand-accent">.</span>
+        <span class="brand-code-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#beyond-coding" class="nav-link">Beyond Coding</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Landmark for Screen Readers -->
+  <main id="main-content">
+
+    <!-- =======================================================================
+         SECTION 2: HERO SECTION (Cinematic, Dark, Bold Editorial)
+         ======================================================================= -->
+    <section class="section-hero" id="hero" aria-label="Hero Introduction">
+      <!-- Ambient Crimson Glow and Background Grid Elements -->
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        <!-- Integrated Meta & Status Bar (Prevents Overlap on Any Screen Height) -->
+        <div class="hero-meta-bar reveal-fade">
+          <div class="hero-badge">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span class="badge-text">B.TECH CSE STUDENT | ASPIRING DEVELOPER</span>
+          </div>
+          <div class="hero-hud-tags" aria-hidden="true">
+            <span class="hud-item">SYS_ID: 2ND_YEAR_CSE // DSEU_GB_PANT</span>
+            <span class="hud-separator">|</span>
+            <span class="hud-item">STATUS: LEARNING &amp; BUILDING</span>
+          </div>
+        </div>
+
+        <!-- Oversized Cinematic Typography -->
+        <h1 class="hero-title reveal-fade">
+          <span class="hero-title__line hero-title__line--1">CODE<span class="accent-period">.</span></span>
+          <span class="hero-title__line hero-title__line--2">CREATE<span class="accent-period">.</span></span>
+          <span class="hero-title__line hero-title__line--3 outline-text">EXPLORE<span class="accent-period">.</span></span>
+        </h1>
+
+        <!-- Honest Introduction Text -->
+        <div class="hero-intro-wrapper reveal-fade">
+          <p class="hero-greeting">Hey, I'm <span class="highlight-text">Anurag Chaurasia</span>.</p>
+          <p class="hero-description">
+            I'm a second-year Computer Science student, a curious coder and a gaming enthusiast who enjoys exploring technology and building things while learning along the way.
+          </p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hero-actions reveal-fade">
+          <a href="#projects" class="btn btn--primary">
+            <span>Explore My Work</span>
+            <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn--outline">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <a href="#about" class="scroll-link" aria-label="Scroll to About section">
+            <span class="scroll-text">SCROLL DOWN</span>
+            <div class="scroll-mouse">
+              <span class="scroll-wheel"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 3: ABOUT ME (Light Section with Rounded Corners)
+         ======================================================================= -->
+    <section class="section-about" id="about" aria-label="About Me">
+      <div class="about-card-container">
+        <div class="section-header-tag">
+          <span class="tag-number">// 01</span>
+          <span class="tag-label">ABOUT ME</span>
+        </div>
+
+        <div class="about-grid">
+          <!-- Text Column (Editorial Style) -->
+          <div class="about-content">
+            <h2 class="about-heading reveal-on-scroll">
+              More Than Just Code<span class="accent-period">.</span>
+            </h2>
+
+            <div class="about-text-body reveal-on-scroll">
+              <p class="about-paragraph about-paragraph--lead">
+                I'm currently pursuing my second year of <span class="editorial-highlight">B.Tech in Computer Science and Engineering</span> at <span class="editorial-highlight">DSEU GB Pant Engineering College</span>. My interest in technology comes from the curiosity to understand how things work and the excitement of creating something of my own.
+              </p>
+              <p class="about-paragraph">
+                I've explored programming languages and computer science subjects, and I'm currently learning how to bring ideas to life through web development.
+              </p>
+              <p class="about-paragraph">
+                Outside coding, I enjoy gaming, have an interest in drawing and have also experienced the teamwork and energy of competitive Tug of War.
+              </p>
+              <p class="about-paragraph about-paragraph--closing">
+                I'm still learning, experimenting and discovering what I can build next.
+              </p>
+            </div>
+
+            <!-- Quick Academic Context Badges (Honest & Factual) -->
+            <div class="about-meta-chips reveal-on-scroll">
+              <div class="meta-chip">
+                <span class="chip-label">Program:</span>
+                <span class="chip-val">B.Tech CSE</span>
+              </div>
+              <div class="meta-chip">
+                <span class="chip-label">College:</span>
+                <span class="chip-val">DSEU GB Pant</span>
+              </div>
+              <div class="meta-chip">
+                <span class="chip-label">Current Stage:</span>
+                <span class="chip-val">Year 2 Undergraduate</span>
+              </div>
+              <div class="meta-chip">
+                <span class="chip-label">Current Focus:</span>
+                <span class="chip-val">Web Development &amp; Core CS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asymmetric Visual Column (Abstract Developer Graphic / Vector) -->
+          <div class="about-visual reveal-on-scroll" aria-hidden="true">
+            <div class="developer-composition">
+              <!-- Visual Wireframe Container -->
+              <div class="tech-card-graphic">
+                <div class="graphic-header">
+                  <span class="graphic-dot"></span>
+                  <span class="graphic-dot"></span>
+                  <span class="graphic-dot"></span>
+                  <span class="graphic-title">DEVELOPER_LOG // 02</span>
+                </div>
+                <div class="graphic-canvas">
+                  <!-- Abstract SVG Composition: Logic, Algorithmic Geometry & Code Nodes -->
+                  <svg class="abstract-dev-svg" viewBox="0 0 360 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                      <linearGradient id="grid-grad" x1="0" y1="0" x2="360" y2="280" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#E52432" stop-opacity="0.2"/>
+                        <stop offset="100%" stop-color="#111111" stop-opacity="0.05"/>
+                      </linearGradient>
+                      <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                        <circle cx="2" cy="2" r="1.5" fill="#111111" fill-opacity="0.12"/>
+                      </pattern>
+                    </defs>
+                    <!-- Background Grid -->
+                    <rect width="360" height="280" fill="url(#dot-pattern)" />
+                    <!-- Geometric Node System representing CSE Foundations -->
+                    <path d="M 40 220 L 120 140 L 220 180 L 320 80" stroke="#111111" stroke-width="2" stroke-dasharray="4 4" />
+                    <path d="M 120 140 L 180 60 L 260 90" stroke="#E52432" stroke-width="2.5" />
+                    
+                    <!-- Nodes -->
+                    <circle cx="40" cy="220" r="6" fill="#111111" />
+                    <circle cx="120" cy="140" r="7" fill="#E52432" />
+                    <circle cx="180" cy="60" r="5" fill="#111111" />
+                    <circle cx="220" cy="180" r="6" fill="#111111" />
+                    <circle cx="260" cy="90" r="5" fill="#111111" />
+                    <circle cx="320" cy="80" r="8" fill="#E52432" fill-opacity="0.2" stroke="#E52432" stroke-width="2" />
+
+                    <!-- Code Structure Graphic Box -->
+                    <rect x="60" y="80" width="130" height="46" rx="6" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.5" />
+                    <rect x="74" y="94" width="45" height="6" rx="3" fill="#E52432" />
+                    <rect x="74" y="106" width="90" height="5" rx="2.5" fill="#CCCCCC" />
+
+                    <!-- Logic Block -->
+                    <rect x="180" y="155" width="150" height="72" rx="6" fill="#111111" />
+                    <text x="195" y="177" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="bold">const anurag = {</text>
+                    <text x="205" y="193" fill="#E52432" font-family="monospace" font-size="10">college: 'DSEU',</text>
+                    <text x="205" y="207" fill="#A1A1A1" font-family="monospace" font-size="10">status: 'Building'</text>
+                    <text x="195" y="221" fill="#FFFFFF" font-family="monospace" font-size="11">};</text>
+                  </svg>
+                </div>
+                <div class="graphic-footer">
+                  <span class="graphic-badge">FOUNDATIONS</span>
+                  <span class="graphic-stat">CURIOSITY &gt; COMPLACENCY</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 4: TECHNICAL SKILLS (Dark Background, Honest Skills Grid)
+         ======================================================================= -->
+    <section class="section-skills" id="skills" aria-label="Technical Skills">
+      <div class="content-container">
+        <div class="section-heading-block reveal-on-scroll">
+          <div class="section-header-tag">
+            <span class="tag-number">// 02</span>
+            <span class="tag-label">ACADEMIC &amp; TECHNICAL FOUNDATIONS</span>
+          </div>
+          <h2 class="section-title">
+            Things I've Been Learning<span class="accent-period">.</span>
+          </h2>
+          <p class="section-subtitle">
+            Technologies and core subjects I have studied and am currently exploring. No exaggerated proficiency bars or manufactured claims — just genuine learning.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming Languages -->
+          <article class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div class="category-title-wrap">
+                <span class="category-counter">CAT 01</span>
+                <h3 class="category-title">Programming Languages</h3>
+              </div>
+            </div>
+            <p class="category-desc">Languages studied as part of my core computer science curriculum and personal problem-solving practice.</p>
+            <ul class="skills-tag-list" aria-label="Programming Languages studied">
+              <li class="skill-tag">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">Java</span>
+              </li>
+              <li class="skill-tag">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">C</span>
+              </li>
+              <li class="skill-tag">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">C++</span>
+              </li>
+              <li class="skill-tag">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">Python</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Category 2: Computer Science Subjects -->
+          <article class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div class="category-title-wrap">
+                <span class="category-counter">CAT 02</span>
+                <h3 class="category-title">Computer Science Subjects</h3>
+              </div>
+            </div>
+            <p class="category-desc">Foundational theoretical and architectural coursework covering data structure and lifecycle design.</p>
+            <ul class="skills-tag-list" aria-label="Computer Science Subjects studied">
+              <li class="skill-tag">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">Database Management Systems (DBMS)</span>
+              </li>
+              <li class="skill-tag">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">Software Engineering</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Web Development -->
+          <article class="skill-category-card skill-category-card--highlight reveal-on-scroll">
+            <div class="category-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              </div>
+              <div class="category-title-wrap">
+                <span class="category-counter">CAT 03</span>
+                <h3 class="category-title">Web Development</h3>
+              </div>
+            </div>
+            <p class="category-desc">Core frontend technologies studied and actively used to craft this responsive, accessible portfolio project.</p>
+            <ul class="skills-tag-list" aria-label="Web Development technologies studied">
+              <li class="skill-tag skill-tag--active">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">HTML</span>
+              </li>
+              <li class="skill-tag skill-tag--active">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">CSS</span>
+              </li>
+              <li class="skill-tag skill-tag--active">
+                <span class="skill-tag__bullet"></span>
+                <span class="skill-tag__name">JavaScript</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 5: PROJECTS (Authentic Showcase, Dynamic JS System)
+         ======================================================================= -->
+    <section class="section-projects" id="projects" aria-label="Projects Showcase">
+      <div class="content-container">
+        <div class="section-heading-block reveal-on-scroll">
+          <div class="section-header-tag">
+            <span class="tag-number">// 03</span>
+            <span class="tag-label">PORTFOLIO WORK</span>
+          </div>
+          <h2 class="section-title">
+            Things I've Built<span class="accent-period">.</span>
+          </h2>
+          <p class="section-subtitle">
+            Authentic projects built from scratch. As I build more applications throughout my B.Tech journey, they will be documented here.
+          </p>
+        </div>
+
+        <!-- Dynamic Projects Container (Populated by script.js) -->
+        <div class="projects-showcase-container" id="projects-container">
+          <!-- Project 01: Hand-coded initial flagship project card -->
+          <article class="project-card project-card--featured reveal-on-scroll" data-project-id="1">
+            <div class="project-card__body">
+              <div class="project-card__top">
+                <span class="project-card__badge">PROJECT 01</span>
+                <span class="project-card__type">FIRST WEB DEV PROJECT</span>
+              </div>
+
+              <h3 class="project-card__title">Personal Developer Portfolio</h3>
+
+              <p class="project-card__description">
+                My first Web Development project, created using HTML, CSS and JavaScript. It represents my interest in frontend development and my journey of learning how to turn ideas into interactive websites.
+              </p>
+
+              <!-- Tech Stack Badges -->
+              <div class="project-card__tech" aria-label="Technologies used">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+
+              <!-- Project Links -->
+              <div class="project-card__actions">
+                <a href="https://github.com/anuragh112005" target="_blank" rel="noopener noreferrer" class="btn btn--small btn--outline js-repo-link" data-link-type="repo" aria-label="View Anurag's GitHub profile and repository">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+
+                <a href="#hero" class="btn btn--small btn--primary js-live-link" data-link-type="live" aria-label="Explore live portfolio website">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+                  <span>Live Preview (Current Site)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Project Showcase Panel -->
+            <div class="project-card__preview" aria-hidden="true">
+              <div class="preview-browser-frame">
+                <div class="browser-header">
+                  <span class="browser-dot browser-dot--close"></span>
+                  <span class="browser-dot browser-dot--min"></span>
+                  <span class="browser-dot browser-dot--max"></span>
+                  <div class="browser-address-bar">portfolio://anurag-chaurasia-v1</div>
+                </div>
+                <div class="browser-canvas">
+                  <div class="preview-hero-mock">
+                    <span class="mock-tag">CODE. CREATE. EXPLORE.</span>
+                    <div class="mock-accent-line"></div>
+                    <div class="mock-grid-lines">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mock-code-box">
+                      <span class="mock-code-comment">// DSEU GB Pant: 2nd Year CSE</span>
+                      <span class="mock-code-active">&gt; Web Development Portfolio</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Note on Future Projects (Authenticity Assurance) -->
+        <div class="projects-note reveal-on-scroll">
+          <p class="projects-note__text">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E52432" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Additional projects will be displayed here as I complete more practical builds throughout my coursework. No placeholder mockups or dummy data.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 6: BEYOND CODING (Personality & Life Outside Academics)
+         ======================================================================= -->
+    <section class="section-beyond" id="beyond-coding" aria-label="Beyond Coding">
+      <div class="content-container">
+        <div class="section-heading-block reveal-on-scroll">
+          <div class="section-header-tag">
+            <span class="tag-number">// 04</span>
+            <span class="tag-label">PERSONALITY &amp; INTERESTS</span>
+          </div>
+          <h2 class="section-title">
+            Life Beyond The Screen<span class="accent-period">.</span>
+          </h2>
+          <p class="section-subtitle">
+            What shapes my perspective, creativity, and discipline outside academic textbooks.
+          </p>
+        </div>
+
+        <div class="beyond-grid">
+          <!-- Card 01: Gaming -->
+          <article class="beyond-card beyond-card--gaming reveal-on-scroll">
+            <div class="beyond-card__inner">
+              <div class="beyond-card__header">
+                <span class="beyond-card__index">01</span>
+                <div class="beyond-card__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"></line><line x1="8" y1="10" x2="8" y2="14"></line><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line><rect x="2" y="6" width="20" height="12" rx="6"></rect></svg>
+                </div>
+              </div>
+
+              <h3 class="beyond-card__title">GAMING</h3>
+              <p class="beyond-card__text">
+                "I enjoy gaming and exploring different virtual worlds. Gaming is one of the things I enjoy outside my academic life."
+              </p>
+
+              <div class="beyond-card__tag" aria-hidden="true">
+                <span>STRATEGY &amp; EXPLORATION</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 02: Drawing -->
+          <article class="beyond-card beyond-card--drawing reveal-on-scroll">
+            <div class="beyond-card__inner">
+              <div class="beyond-card__header">
+                <span class="beyond-card__index">02</span>
+                <div class="beyond-card__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                </div>
+              </div>
+
+              <h3 class="beyond-card__title">DRAWING</h3>
+              <p class="beyond-card__text">
+                "I used to spend time drawing and exploring my creative side. It is another way I enjoy expressing ideas."
+              </p>
+
+              <div class="beyond-card__tag" aria-hidden="true">
+                <span>VISUAL EXPRESSION</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 03: Teamwork -->
+          <article class="beyond-card beyond-card--teamwork reveal-on-scroll">
+            <div class="beyond-card__inner">
+              <div class="beyond-card__header">
+                <span class="beyond-card__index">03</span>
+                <div class="beyond-card__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1 .45-1 1v1h12v-1c0-.55-.45-1-1-1h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M15 9V4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v5a4 4 0 0 0 8 0z"></path></svg>
+                </div>
+              </div>
+
+              <h3 class="beyond-card__title">TEAMWORK</h3>
+              <p class="beyond-card__text">
+                "I have received a trophy in Tug of War. It is an achievement I value because of the teamwork and coordination involved."
+              </p>
+
+              <div class="beyond-card__tag" aria-hidden="true">
+                <span>COORDINATION &amp; GRIT</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 7: LEARNING MINDSET (Bold Typographic Statement)
+         ======================================================================= -->
+    <section class="section-mindset" id="mindset" aria-label="Learning Mindset">
+      <div class="content-container">
+        <div class="mindset-wrap">
+          <div class="section-header-tag">
+            <span class="tag-number">// 05</span>
+            <span class="tag-label">GROWTH PHILOSOPHY</span>
+          </div>
+
+          <h2 class="mindset-title reveal-on-scroll">
+            Still Learning<span class="accent-period">.</span><br>
+            Always Building<span class="accent-period">.</span>
+          </h2>
+
+          <p class="mindset-quote reveal-on-scroll">
+            "I don't believe learning stops after understanding a programming language. There is always something new to explore, a problem to solve and an idea worth experimenting with."
+          </p>
+
+          <!-- Core Values / Visual Keywords -->
+          <div class="mindset-keywords reveal-on-scroll" aria-label="Core values">
+            <div class="keyword-pill">
+              <span class="keyword-index">01</span>
+              <span class="keyword-name">Curiosity</span>
+            </div>
+            <div class="keyword-pill">
+              <span class="keyword-index">02</span>
+              <span class="keyword-name">Consistency</span>
+            </div>
+            <div class="keyword-pill">
+              <span class="keyword-index">03</span>
+              <span class="keyword-name">Creativity</span>
+            </div>
+            <div class="keyword-pill">
+              <span class="keyword-index">04</span>
+              <span class="keyword-name">Problem Solving</span>
+            </div>
+            <div class="keyword-pill">
+              <span class="keyword-index">05</span>
+              <span class="keyword-name">Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SECTION 8: CONTACT (Bold Closing & Authentic Links)
+         ======================================================================= -->
+    <section class="section-contact" id="contact" aria-label="Contact Information">
+      <div class="content-container">
+        <div class="contact-card reveal-on-scroll">
+          <div class="contact-card__content">
+            <div class="section-header-tag">
+              <span class="tag-number">// 06</span>
+              <span class="tag-label">CONNECT</span>
+            </div>
+
+            <h2 class="contact-title">
+              Have Something In Mind<span class="accent-period">?</span>
+            </h2>
+
+            <p class="contact-description">
+              I'm always open to learning, exploring ideas and connecting with people who enjoy building things.
+            </p>
+
+            <!-- Channels Grid -->
+            <div class="contact-channels">
+              <!-- Email Item -->
+              <div class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">EMAIL</span>
+                  <a href="mailto:anuragh112005@gmail.com" class="channel-link js-contact-link" data-type="email" id="contact-email">
+                    anuragh112005@gmail.com
+                  </a>
+                </div>
+                <button type="button" class="btn-copy js-copy-email" aria-label="Copy email address to clipboard" data-copy-target="contact-email">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copy</span>
+                </button>
+              </div>
+
+              <!-- GitHub Item -->
+              <div class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">GITHUB</span>
+                  <a href="https://github.com/anuragh112005" target="_blank" rel="noopener noreferrer" class="channel-link js-contact-link" data-type="github" id="contact-github">
+                    github.com/anuragh112005
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn Item -->
+              <div class="channel-card">
+                <div class="channel-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-name">LINKEDIN</span>
+                  <a href="https://www.linkedin.com/in/anurag-chaurasia-174434394/" target="_blank" rel="noopener noreferrer" class="channel-link js-contact-link" data-type="linkedin" id="contact-linkedin">
+                    linkedin.com/in/anurag-chaurasia
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       SECTION 9: FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <!-- Brand & Personal Statement -->
+        <div class="footer-identity">
+          <a href="#hero" class="footer-brand" aria-label="Back to top">
+            <span class="brand-code-bracket">&lt;</span>
+            <span class="brand-name" id="footer-brand-name">ANURAG</span>
+            <span class="brand-accent">.</span>
+            <span class="brand-code-bracket">/&gt;</span>
+          </a>
+          <p class="footer-statement">
+            Second-year Computer Science &amp; Engineering undergraduate at DSEU GB Pant Engineering College exploring web development, algorithmic logic, and interactive systems.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <span class="footer-nav-title">Navigation</span>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#beyond-coding">Beyond Coding</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Social / Connect Links -->
+        <div class="footer-social">
+          <span class="footer-nav-title">Connect</span>
+          <ul class="footer-links">
+            <li><a href="mailto:anuragh112005@gmail.com" class="js-footer-email">Email</a></li>
+            <li><a href="https://github.com/anuragh112005" target="_blank" rel="noopener noreferrer" class="js-footer-github">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/anurag-chaurasia-174434394/" target="_blank" rel="noopener noreferrer" class="js-footer-linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-closing-text">
+          Designed and built with curiosity, creativity and code.
+        </p>
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> Anurag Chaurasia. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Interactive Toast Notification Container (for copies & alerts) -->
+  <div class="toast-container" id="toast" role="status" aria-live="polite" aria-hidden="true">
+    <div class="toast-content" id="toast-message">Message text</div>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>
